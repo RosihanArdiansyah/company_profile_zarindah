@@ -157,6 +157,83 @@
       </div>
     </section><!-- End About Us Section -->
 
+    <!-- ======= Products Section ======= -->
+
+    <section id="product" class="product">
+      <div class="container text-center">
+        <h1 class="title text-white">Product</h1>
+        <div class="product-carousel">
+          <div class="box-product carousel-cell">
+            <img src="assets/img/coockies.jpg" alt="">
+            <div class="area-product">
+              <h1 class="product-title text-white">Coockies</h1>
+              <p>Crispy texture because it is baked at high temperature plus chocochips to make the taste sweet.</p>
+              <h1 class="price">IDR 30.000</h1>
+            </div>
+          </div>
+          <div class="box-product carousel-cell">
+            <img src="assets/img/croissant.jpg" alt="">
+            <div class="area-product">
+              <h1 class="product-title text-white">Croissant</h1>
+              <p>Crispy texture on the outside and soft on the inside, filled with butter which makes it taste
+                delicious,
+                perfect for breakfast</p>
+              <h1 class="price">IDR 20.000</h1>
+            </div>
+          </div>
+          <div class="box-product carousel-cell">
+            <img src="assets/img/baguette.jpg" alt="">
+            <div class="area-product">
+              <h1 class="product-title text-white">Baguette</h1>
+              <p>bread that is elongated in shape and has a hard skin texture but is soft inside, elongated like a
+                stick,
+                usually served sliced and spread with butter and garlic.</p>
+              <h1 class="price">IDR 40.000</h1>
+            </div>
+          </div>
+          <div class="box-product carousel-cell">
+            <img src="assets/img/pretzels.jpg" alt="">
+            <div class="area-product">
+              <h1 class="product-title text-white">Pretzel</h1>
+              <p> The taste of pretzels is generally savory or slightly sweet. The texture of the pretzels is usually
+                soft
+                and tender. Generally, pretzels are served with a sprinkling of coarse salt.</p>
+              <h1 class="price">IDR 25.000</h1>
+            </div>
+          </div>
+          <div class="box-product carousel-cell">
+            <img src="assets/img/sourdough.jpg" alt="">
+            <div class="area-product">
+              <h1 class="product-title text-white">Sourdough</h1>
+              <p>This easy-to-digest bread goes well with butter and garlic, the texture is dense and fibrous and the
+                taste
+                is slightly sour.</p>
+              <h1 class="price">IDR 50.000</h1>
+            </div>
+          </div>
+          <div class="box-product carousel-cell">
+            <img src="assets/img/donuts.jpg" alt="">
+            <div class="area-product">
+              <h1 class="product-title text-white">Donuts</h1>
+              <p>Soft Bread Texture Covered with sweet Chocolate and also sprinkled with nuts and has other flavors.</p>
+              <h1 class="price">IDR 20.0000</h1>
+            </div>
+          </div>
+          <div class="box-product carousel-cell">
+            <img src="assets/img/muffin.jpg" alt="">
+            <div class="area-product">
+              <h1 class="product-title text-white">Muffin</h1>
+              <p>The Texture is soft with vanilla cream filling on top and also sprinkled with cocoa powder and choco
+                chips.
+              </p>
+              <h1 class="price">IDR 20.000</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Products Section -->
+
     <!-- ======= Call To Action Section ======= -->
     <section class="call-to-action" id="article">
       <div class="container">
@@ -205,86 +282,7 @@
         </div>
       </div>
     </section><!-- End Call To Action Section -->
-
-
-
-    <!-- ======= Products Section ======= -->
-
-    <section id="product" class="product">
-      <div class="container text-center">
-        <h1 class="title">Product</h1>
-        <div class="product-carousel">
-          <div class="box-product carousel-cell">
-            <img src="assets/img/coockies.jpg" alt="">
-            <div class="area-product">
-              <h1 class="product-title">Coockies</h1>
-              <p>Crispy texture because it is baked at high temperature plus chocochips to make the taste sweet.</p>
-              <h1 class="price">IDR 30.000</h1>
-            </div>
-          </div>
-          <div class="box-product carousel-cell">
-            <img src="assets/img/croissant.jpg" alt="">
-            <div class="area-product">
-              <h1 class="product-title">Croissant</h1>
-              <p>Crispy texture on the outside and soft on the inside, filled with butter which makes it taste
-                delicious,
-                perfect for breakfast</p>
-              <h1 class="price">IDR 20.000</h1>
-            </div>
-          </div>
-          <div class="box-product carousel-cell">
-            <img src="assets/img/baguette.jpg" alt="">
-            <div class="area-product">
-              <h1 class="product-title">Baguette</h1>
-              <p>bread that is elongated in shape and has a hard skin texture but is soft inside, elongated like a
-                stick,
-                usually served sliced and spread with butter and garlic.</p>
-              <h1 class="price">IDR 40.000</h1>
-            </div>
-          </div>
-          <div class="box-product carousel-cell">
-            <img src="assets/img/pretzels.jpg" alt="">
-            <div class="area-product">
-              <h1 class="product-title">Pretzel</h1>
-              <p> The taste of pretzels is generally savory or slightly sweet. The texture of the pretzels is usually
-                soft
-                and tender. Generally, pretzels are served with a sprinkling of coarse salt.</p>
-              <h1 class="price">IDR 25.000</h1>
-            </div>
-          </div>
-          <div class="box-product carousel-cell">
-            <img src="assets/img/sourdough.jpg" alt="">
-            <div class="area-product">
-              <h1 class="product-title">Sourdough</h1>
-              <p>This easy-to-digest bread goes well with butter and garlic, the texture is dense and fibrous and the
-                taste
-                is slightly sour.</p>
-              <h1 class="price">IDR 50.000</h1>
-            </div>
-          </div>
-          <div class="box-product carousel-cell">
-            <img src="assets/img/donuts.jpg" alt="">
-            <div class="area-product">
-              <h1 class="product-title">Donuts</h1>
-              <p>Soft Bread Texture Covered with sweet Chocolate and also sprinkled with nuts and has other flavors.</p>
-              <h1 class="price">IDR 20.0000</h1>
-            </div>
-          </div>
-          <div class="box-product carousel-cell">
-            <img src="assets/img/muffin.jpg" alt="">
-            <div class="area-product">
-              <h1 class="product-title">Muffin</h1>
-              <p>The Texture is soft with vanilla cream filling on top and also sprinkled with cocoa powder and choco
-                chips.
-              </p>
-              <h1 class="price">IDR 20.000</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Products Section -->
-
+    
     <!-- ======= Contact Us Section ======= -->
     <section id="contact" class="contact section-bg">
       <div class="container">

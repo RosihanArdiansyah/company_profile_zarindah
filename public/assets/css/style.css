@@ -36,7 +36,7 @@ h6,
 }
 
 .carousel-item {
-	height: 60vh;
+	height: 80vh;
 	min-height: 350px;
 	background: no-repeat center center scroll;
 	-webkit-background-size: cover;
@@ -279,11 +279,11 @@ h6,
 	z-index: 997;
 	transition: all 0.5s;
 	padding: 20px 0;
-	background: #020a20;
+	background: #228B22;
 }
 
 #header.header-scrolled {
-	background: #020a20;
+	background: #228B22;
 	height: 60px;
 	padding: 10px 0;
 }
@@ -346,7 +346,7 @@ h6,
 .nav-menu a:hover,
 .nav-menu .active > a,
 .nav-menu li:hover > a {
-	color: #9cd5ce;
+	color: #075318;
 	text-decoration: none;
 }
 
@@ -546,7 +546,7 @@ h6,
 
 #hero:before {
 	content: "";
-	background: rgb(32, 57, 84, 0.3);
+	background: #228B22;
 	position: absolute;
 	bottom: 0;
 	top: 0;
@@ -657,7 +657,7 @@ section {
 .section-bg,
 .section-bg a,
 .section-bg h2 {
-	background-color: #203954;
+	background-color: #228B22;
 	color: #fff !important;
 }
 
@@ -982,7 +982,8 @@ section {
 .product {
 	justify-content: center;
 	align-items: center;
-	background: #203954;
+	background: #32CD32;
+	height: 80vh;
 }
 
 .product-carousel {
@@ -1032,6 +1033,9 @@ section {
 /*--------------------------------------------------------------
 # Contact Us
 --------------------------------------------------------------*/
+.contact{
+	background: #32CD32;
+}
 .contact .contact-about h3 {
 	font-size: 36px;
 	margin: 0 0 10px 0;
@@ -1191,7 +1195,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-	background: #203954;
+	background: #228B22;
 	padding: 30px 0;
 	color: #fff;
 	font-size: 14px;
