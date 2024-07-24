@@ -76,47 +76,33 @@
   <!-- ======= Hero Section ======= -->
   <section>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url(assets/img/footer-bg.png)">
-          <div class="carousel-caption">
-            <h2 class="display-4">Our-Company</h2>
-            <p class="lead">Delivering relevant, agile yet simple technological solutions for financial services
-              providers</p>
-          </div>
+        <ol class="carousel-indicators">
+            @foreach($promo as $index => $item)
+                <li data-target="#carouselExampleIndicators" data-slide-to="{{ $index }}" class="{{ $item['active'] ? 'active' : '' }}"></li>
+            @endforeach
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          @foreach($promo as $item)
+              @php
+                  $activeClass = $item['active'] ? 'active' : '';
+                  $backgroundImage = asset($item['image']);
+              @endphp
+              <div class="carousel-item {{ $activeClass }}" style="background-image: url('{{ $backgroundImage }}')">
+                  <div class="carousel-caption">
+                      <h2 class="display-4">{{ $item['title'] }}</h2>
+                      <p class="lead">{{ $item['description'] }}</p>
+                  </div>
+              </div>
+          @endforeach
         </div>
-        <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url(assets/img/slider-2.jpg)">
-          <div class="carousel-caption ">
-            <h2 class="display-4">Our-Company</h2>
-            <p class="lead">Delivering relevant technologies for our times</p>
-          </div>
-        </div>
-        <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url(assets/img/covid.jpg)">
-          <div class="carousel-caption covid-block">
-            <h2 class="display-4">We are in this together.</h2>
-            <p class="lead" style="background: rgba(0, 0, 0, 0.7); border-radius: 3px;">Our Organisation is committed on
-              taking recommendations from the health authorities,
-              WHO (World Health Organisation) and our local authority. Our company is committed to follow
-              the guidelines which includes, refraining from non-essential travelling, self-isolation upon return
-              from any affected areas, social distancing, wearing of musk’s and use of hand sanitizer.</p>
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
   </section><!-- #hero -->
 
@@ -163,72 +149,16 @@
       <div class="container text-center">
         <h1 class="title text-white">Product</h1>
         <div class="product-carousel">
-          <div class="box-product carousel-cell">
-            <img src="assets/img/coockies.jpg" alt="">
-            <div class="area-product">
-              <h1 class="product-title text-white">Coockies</h1>
-              <p>Crispy texture because it is baked at high temperature plus chocochips to make the taste sweet.</p>
-              <h1 class="price">IDR 30.000</h1>
+          @foreach($products as $product)
+            <div class="box-product carousel-cell">
+              <img src="{{ asset($product['image']) }}" alt="{{ $product['title'] }}">
+              <div class="area-product">
+                  <h1 class="product-title text-white">{{ $product['title'] }}</h1>
+                  <p>{{ $product['description'] }}</p>
+                  <h1 class="price">{{ $product['price'] }}</h1>
+              </div>
             </div>
-          </div>
-          <div class="box-product carousel-cell">
-            <img src="assets/img/croissant.jpg" alt="">
-            <div class="area-product">
-              <h1 class="product-title text-white">Croissant</h1>
-              <p>Crispy texture on the outside and soft on the inside, filled with butter which makes it taste
-                delicious,
-                perfect for breakfast</p>
-              <h1 class="price">IDR 20.000</h1>
-            </div>
-          </div>
-          <div class="box-product carousel-cell">
-            <img src="assets/img/baguette.jpg" alt="">
-            <div class="area-product">
-              <h1 class="product-title text-white">Baguette</h1>
-              <p>bread that is elongated in shape and has a hard skin texture but is soft inside, elongated like a
-                stick,
-                usually served sliced and spread with butter and garlic.</p>
-              <h1 class="price">IDR 40.000</h1>
-            </div>
-          </div>
-          <div class="box-product carousel-cell">
-            <img src="assets/img/pretzels.jpg" alt="">
-            <div class="area-product">
-              <h1 class="product-title text-white">Pretzel</h1>
-              <p> The taste of pretzels is generally savory or slightly sweet. The texture of the pretzels is usually
-                soft
-                and tender. Generally, pretzels are served with a sprinkling of coarse salt.</p>
-              <h1 class="price">IDR 25.000</h1>
-            </div>
-          </div>
-          <div class="box-product carousel-cell">
-            <img src="assets/img/sourdough.jpg" alt="">
-            <div class="area-product">
-              <h1 class="product-title text-white">Sourdough</h1>
-              <p>This easy-to-digest bread goes well with butter and garlic, the texture is dense and fibrous and the
-                taste
-                is slightly sour.</p>
-              <h1 class="price">IDR 50.000</h1>
-            </div>
-          </div>
-          <div class="box-product carousel-cell">
-            <img src="assets/img/donuts.jpg" alt="">
-            <div class="area-product">
-              <h1 class="product-title text-white">Donuts</h1>
-              <p>Soft Bread Texture Covered with sweet Chocolate and also sprinkled with nuts and has other flavors.</p>
-              <h1 class="price">IDR 20.0000</h1>
-            </div>
-          </div>
-          <div class="box-product carousel-cell">
-            <img src="assets/img/muffin.jpg" alt="">
-            <div class="area-product">
-              <h1 class="product-title text-white">Muffin</h1>
-              <p>The Texture is soft with vanilla cream filling on top and also sprinkled with cocoa powder and choco
-                chips.
-              </p>
-              <h1 class="price">IDR 20.000</h1>
-            </div>
-          </div>
+          @endforeach
         </div>
       </div>
     </section>
