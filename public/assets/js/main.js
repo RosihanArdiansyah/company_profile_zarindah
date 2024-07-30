@@ -163,4 +163,11 @@
 		wrapAround: true,
 		pageDots: false,
 	});
+	$(".items-carousel").flickity({
+		cellAlign: "left",
+		contain: true,
+		autoPlay: true,
+		wrapAround: true,
+		pageDots: false,
+	});
 })(jQuery);

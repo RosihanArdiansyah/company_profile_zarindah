@@ -8,6 +8,13 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+:root{
+	--primary-color: #416D19;
+	--secondary-color: #9BCF53;
+	--light-color:#FFF67E;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Inter:wght@600&display=swap');
 body {
 	font-family: "Open Sans", sans-serif;
 	color: #777;
@@ -279,11 +286,11 @@ h6,
 	z-index: 997;
 	transition: all 0.5s;
 	padding: 20px 0;
-	background: #228B22;
+	background: var(--primary-color);
 }
 
 #header.header-scrolled {
-	background: #228B22;
+	background: var(--primary-color);
 	height: 60px;
 	padding: 10px 0;
 }
@@ -340,13 +347,14 @@ h6,
 	padding: 10px 15px;
 	transition: 0.3s;
 	font-size: 14px;
-	font-family: "Open Sans", sans-serif;
+	/* font-family: "Open Sans", sans-serif; */
+	font-family: "Edu AU VIC WA NT Hand", cursive;
 }
 
 .nav-menu a:hover,
 .nav-menu .active > a,
 .nav-menu li:hover > a {
-	color: #c5da0a;
+	color: var(--light-color);
 	text-decoration: none;
 }
 
@@ -546,7 +554,7 @@ h6,
 
 #hero:before {
 	content: "";
-	background: #228B22;
+	background: var(--primary-color);
 	position: absolute;
 	bottom: 0;
 	top: 0;
@@ -982,7 +990,7 @@ section {
 .product {
 	justify-content: center;
 	align-items: center;
-	background: #32CD32;
+	background: var(--secondary-color);
 	height: 80vh;
 }
 
@@ -1030,6 +1038,10 @@ section {
 	color: #ececec;
 }
 
+.area-product button{
+	width: 100px;
+}
+
 /*--------------------------------------------------------------
 # Article
 --------------------------------------------------------------*/
@@ -1049,13 +1061,18 @@ section {
     background-size: cover;
     background-position: center;
     display: inline-block;
+	position: relative;
+    text-decoration: none; /* Remove underline from link */
+}
+.carousel-cell:hover .article-title {
+    text-decoration: underline; /* Add underline on hover */
 }
 
 /*--------------------------------------------------------------
 # Contact Us
 --------------------------------------------------------------*/
 .contact{
-	background: #32CD32;
+	background: var(--secondary-color);
 }
 .contact .contact-about h3 {
 	font-size: 36px;
@@ -1064,14 +1081,14 @@ section {
 	line-height: 1;
 	font-weight: 500;
 	letter-spacing: 1px;
-	color: #70b9b0;
+	color: #ffffff;
 }
 
 .contact .contact-about p {
 	font-size: 14px;
 	line-height: 24px;
 	font-family: "Lato", sans-serif;
-	color: #888;
+	color: #ffffff;
 }
 
 .contact .social-links {
@@ -1081,8 +1098,8 @@ section {
 .contact .social-links a {
 	font-size: 18px;
 	display: inline-block;
-	background: #fff;
-	color: #70b9b0;
+	background: #ffffff8a;
+	color: #ffffff;
 	line-height: 1;
 	padding: 8px 0;
 	margin-right: 4px;
@@ -1100,12 +1117,12 @@ section {
 }
 
 .contact .info {
-	color: #777;
+	color: #fffdfd;
 }
 
 .contact .info i {
 	font-size: 32px;
-	color: #70b9b0;
+	color: #252eb1;
 	float: left;
 	line-height: 1;
 }
@@ -1216,7 +1233,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-	background: #228B22;
+	background: var(--primary-color);
 	padding: 30px 0;
 	color: #fff;
 	font-size: 14px;

@@ -124,18 +124,10 @@
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
             <h3>What we do</h3>
             <p class="">
-              Specialist in financial services software solutions to help financial services providers unlock
-              business growth and digital transformation through innovation and technology.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
             <p>
-              Our-Compnay focuses on delivering relevant, agile yet simple technological solutions
-              for financial services providers in the emerging markets. Our solutions give a better user
-              interface to wealth managers, fund managers, insurance brokers /companies and other financial
-              services providers with minimum costs.
-            </p>
-            <p>
-              As a simple rule, we do not aim to be the most dominant software provider in our space, but we
-              aim to be the best in the niche that we serve.
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
             </p>
           </div>
         </div>
@@ -155,7 +147,7 @@
               <div class="area-product">
                   <h1 class="product-title text-white">{{ $product['title'] }}</h1>
                   <p>{{ $product['description'] }}</p>
-                  <h1 class="price">{{ $product['price'] }}</h1>
+                  <button type="button" class="btn btn-info btn-sm">Detail</button>
               </div>
             </div>
           @endforeach
@@ -168,7 +160,7 @@
     <section id="article" class="article">
       <div class="container text-center">
         <h1 class="title text-black">Artikel</h1>
-        <div class="product-carousel">
+        <div class="items-carousel">
           @foreach($products as $product)
             <div class="box-product carousel-cell article-carousel" style="background-image: url('{{ asset($product['image']) }}')">
               <h1 class="article-title text-white">{{ $product['title'] }}</h1>
@@ -189,8 +181,15 @@
             <div class="contact-about">
               <h3>Our-Compnay</h3>
               <p>Delivering relevant technologies for our times</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="contact-about">
+              <h3>Social-Links</h3>
               <div class="social-links">
                 <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
+                <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
               </div>
             </div>
           </div>
@@ -211,36 +210,7 @@
             </div>
           </div>
 
-          <div class="col-lg-5 col-md-12">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                  data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                  data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                  data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required"
-                  data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
+          
 
         </div>
 
