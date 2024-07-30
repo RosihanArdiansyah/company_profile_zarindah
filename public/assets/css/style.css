@@ -346,7 +346,7 @@ h6,
 .nav-menu a:hover,
 .nav-menu .active > a,
 .nav-menu li:hover > a {
-	color: #075318;
+	color: #c5da0a;
 	text-decoration: none;
 }
 
@@ -1028,6 +1028,27 @@ section {
 .area-product p {
 	font-size: 13px;
 	color: #ececec;
+}
+
+/*--------------------------------------------------------------
+# Article
+--------------------------------------------------------------*/
+.article-title {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5); /* Optional: adds a semi-transparent background */
+	padding: 10px; /* Adjust padding to your preference */
+	text-align: center;
+}
+
+.article-carousel{
+	width: 45%; /* Fixed width for each carousel cell */
+    height: 360px; /* Fixed height for each carousel cell */
+    margin-right: 5%; /* Adjust this for spacing */
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
 }
 
 /*--------------------------------------------------------------
