@@ -66,7 +66,6 @@ class HomeController extends Controller
                 'active' => false
             ],
         ];
-
         return view('welcome', compact('products','promo'));
     }
 }

@@ -172,18 +172,18 @@
 	});
 
 	// Initialize scrollspy
-	$('body').scrollspy({ target: '.scrollspy-navbar', offset: 100 });
+	// $('body').scrollspy({ target: '.scrollspy-navbar', offset: 100 });
 
-	// Smooth scrolling for nav links
-	$('.scrollspy-navbar .nav-link').on('click', function (e) {
-		if (this.hash !== "") {
-			e.preventDefault();
-			var hash = this.hash;
-			$('html, body').animate({
-			scrollTop: $(hash).offset().top
-			}, 800, function () {
-			window.location.hash = hash;
-			});
-		}
-	});
+	// // Smooth scrolling for nav links
+	// $('.scrollspy-navbar .nav-link').on('click', function (e) {
+	// 	if (this.hash !== "") {
+	// 		e.preventDefault();
+	// 		var hash = this.hash;
+	// 		$('html, body').animate({
+	// 		scrollTop: $(hash).offset().top
+	// 		}, 800, function () {
+	// 		window.location.hash = hash;
+	// 		});
+	// 	}
+	// });
 })(jQuery);

@@ -1,90 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app')
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Our-Company Associate</title>
-  <meta name="author" content="Rosihan">
-
-  <!-- Favicons -->
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/favicon/site.webmanifest">
-  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="/favicon/favicon.ico">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-config" content="/favicon/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
-
-
-
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900"
-    rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="{{asset('assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-  <link href="{{asset('assets/vendor/animate.css/animate.min.css')}}" rel="stylesheet">
-  <link href="{{asset('assets/vendor/icofont/icofont.min.css')}}" rel="stylesheet">
-  <link href="{{asset('assets/vendor/venobox/venobox.css')}}" rel="stylesheet">
-  <link href="{{asset('assets/vendor/flickity.css/flickity.css')}}" rel="stylesheet"/>
-
-  <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/free.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/brand.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/flag.min.css">
-
-  <!-- Template Main CSS File -->
-  <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
-  <style type="text/css">
-
-  </style>
-</head>
-
-<body>
-
-  <header id="header" class="fixed-top header">
-    <div class="container">
-
-      <div class="logo float-left">
-
-        <!-- <h1 class="text-light"><a href="index.html"><span>Our-Compnay Associate</span></a></h1> -->
-        <a href="/"><img src="assets/img/logo_tok.webp" alt="" class="img-fluid"></a>
-      </div>
-
-      <nav class="nav-menu float-right d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="#header">Home</a></li>
-          <li><a href="#about">Tentang Kami</a></li>
-          <li><a href="#product">Produk</a></li>
-          <li><a href="#article">Artikel</a></li>
-          <li><a href="#contact">Kontak</a></li>
-          <li><a href="#map">Lokasi</a></li>
-        </ul>
-
-      </nav><!-- .nav-menu -->
-
-    </div>
-  </header><!-- End #header -->
-
-  <!-- Scrollspy Navbar -->
-  <nav class="scrollspy-navbar">
-    <ul>
-      <li><a href="#header" class="nav-link">Home</a></li>
-      <li><a href="#about" class="nav-link">Tentang Kami</a></li>
-      <li><a href="#product" class="nav-link">Produk</a></li>
-      <li><a href="#article" class="nav-link">Artikel</a></li>
-      <li><a href="#contact" class="nav-link">Kontak</a></li>
-      <li><a href="#map" class="nav-link">Lokasi</a></li>
-    </ul>
-  </nav><!-- End Scrollspy Navbar -->
-
+@section('content')
 
   <!-- ======= Hero Section ======= -->
   <section>
@@ -175,7 +91,10 @@
         <h1 class="title text-black">Artikel</h1>
         <div class="items-carousel">
           @foreach($products as $product)
-            <div class="box-product carousel-cell article-carousel" style="background-image: url('{{ asset($product['image']) }}')">
+            @php
+                $articleImage = asset($product['image']);
+            @endphp
+            <div class="box-product carousel-cell article-carousel" style="background-image: url('{{ $articleImage }}')">
               <h1 class="article-title text-white">{{ $product['title'] }}</h1>
             </div>
           @endforeach
@@ -239,30 +158,4 @@
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Our-Compnay</span></strong>. All Rights Reserved
-      </div>
-
-    </div>
-  </footer><!-- End #footer -->
-
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="{{asset('assets/vendor/jquery/jquery.min.js')}}"></script>
-  <script src="{{asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-  <script src="{{asset('assets/vendor/jquery.easing/jquery.easing.min.js')}}"></script>
-  <script src="{{asset('assets/vendor/php-email-form/validate.js')}}"></script>
-  <script src="{{asset('assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
-  <script src="{{asset('assets/vendor/venobox/venobox.min.js')}}"></script>
-  <script src="{{asset('assets/vendor/flickity.js/flickity.pkgd.min.js')}}"></script>
-
-  <!-- Template Main JS File -->
-  <script src="{{asset('assets/js/main.js')}}"></script>
-
-</body>
-
-</html>
+  @endsection

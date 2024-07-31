@@ -8,13 +8,13 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-:root{
-	--primary-color: #073D24;
-	--secondary-color: #096B3C;
-	--light-color:#E1F0DA;
-	--hover-color:#E7B10A;
-	--secondary-section-color:#80AF81;
-	--menu-color :#F3FF90;
+:root {
+	--primary-color: #073d24;
+	--secondary-color: #096b3c;
+	--light-color: #e1f0da;
+	--hover-color: #e7b10a;
+	--secondary-section-color: #80af81;
+	--menu-color: #f3ff90;
 }
 body {
 	font-family: "Open Sans", sans-serif;
@@ -159,80 +159,6 @@ h6,
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-.scrollspy-navbar {
-	position: fixed;
-	top: 50%;
-	right: 0;
-	transform: translateY(-50%);
-	width: 40px;
-	background: var(--hover-color);
-	z-index: 1000;
-  }
-
-  .scrollspy-navbar ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-  }
-
-  .scrollspy-navbar ul li {
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	position: relative;
-  }
-
-  .scrollspy-navbar ul li a {
-	display: block;
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
-	text-align: center;
-	background-color: transparent;
-	color: transparent;
-	font-weight: bold;
-	position: relative;
-	transition: background-color 0.3s, color 0.3s;
-  }
-
-  .scrollspy-navbar ul li a:before {
-	content: "•";
-	font-size: 2rem;
-	color: #007bff;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-  }
-
-  .scrollspy-navbar ul li a:hover:before,
-  .scrollspy-navbar ul li a.active:before {
-	color: #0056b3;
-  }
-
-  .scrollspy-navbar ul li a span {
-	position: absolute;
-	top: 50%;
-	right: 50px;
-	transform: translateY(-50%);
-	white-space: nowrap;
-	opacity: 0;
-	transition: opacity 0.3s, right 0.3s;
-	background-color: #007bff;
-	color: white;
-	padding: 5px 10px;
-	border-radius: 5px;
-  }
-
-  .scrollspy-navbar ul li a:hover span,
-  .scrollspy-navbar ul li a.active span {
-	opacity: 1;
-	right: 100%;
-  }
-
-  .scrollspy-navbar ul li a.active span {
-	background-color: #0056b3;
-  }
 
 @keyframes twirl {
 	0% {
@@ -702,7 +628,7 @@ section {
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
-.about{
+.about {
 	background-color: var(--secondary-section-color);
 }
 .about h3 {
@@ -729,7 +655,6 @@ section {
 	margin-bottom: 0;
 }
 
-
 /*--------------------------------------------------------------
 # Product
 --------------------------------------------------------------*/
@@ -741,7 +666,7 @@ section {
 	color: var(--light-color);
 }
 
-.product h1{
+.product h1 {
 	color: var(--light-color);
 }
 
@@ -789,7 +714,7 @@ section {
 	color: #ececec;
 }
 
-.area-product button{
+.area-product button {
 	width: 100px;
 }
 
@@ -800,29 +725,34 @@ section {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	background: rgba(0, 0, 0, 0.5); /* Optional: adds a semi-transparent background */
+	background: rgba(
+		0,
+		0,
+		0,
+		0.5
+	); /* Optional: adds a semi-transparent background */
 	padding: 10px; /* Adjust padding to your preference */
 	text-align: center;
 }
 
-.article-carousel{
+.article-carousel {
 	width: 45%; /* Fixed width for each carousel cell */
-    height: 360px; /* Fixed height for each carousel cell */
-    margin-right: 5%; /* Adjust this for spacing */
-    background-size: cover;
-    background-position: center;
-    display: inline-block;
+	height: 360px; /* Fixed height for each carousel cell */
+	margin-right: 5%; /* Adjust this for spacing */
+	background-size: cover;
+	background-position: center;
+	display: inline-block;
 	position: relative;
-    text-decoration: none; /* Remove underline from link */
+	text-decoration: none; /* Remove underline from link */
 }
 .carousel-cell:hover .article-title {
-    text-decoration: underline; /* Add underline on hover */
+	text-decoration: underline; /* Add underline on hover */
 }
 
 /*--------------------------------------------------------------
 # Contact Us
 --------------------------------------------------------------*/
-.contact{
+.contact {
 	background: var(--secondary-color);
 }
 .contact .contact-about h3 {
@@ -873,7 +803,7 @@ section {
 
 .contact .info i {
 	font-size: 32px;
-	color: #1679AB;
+	color: #1679ab;
 	float: left;
 	line-height: 1;
 }
@@ -915,6 +845,56 @@ section {
 	height: 380px;
 }
 
+/*--------------------------------------------------------------
+# article page
+--------------------------------------------------------------*/
+
+.section-title {
+	background-color: var(--secondary-color);
+	height: 240px;
+}
+.section-title h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 50px;
+}
+.content-page {
+	background-color: var(--secondary-section-color);
+}
+
+/*--------------------------------------------------------------
+# Grid items
+--------------------------------------------------------------*/
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px; /* Adjust the gap between items as needed */
+	padding: 20px;
+}
+
+.grid-item {
+	border: 1px solid #ccc;
+	padding: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+}
+
+.grid-item img {
+	max-width: 100%;
+	height: auto;
+}
+
+.grid-item .title {
+	font-size: 1.2em;
+	margin: 10px 0;
+}
+
+.grid-item p {
+	font-size: 1em;
+	line-height: 1.4;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
