@@ -114,7 +114,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>About Us</h2>
+          <h1>About Us</h1>
         </div>
 
         <div class="row">
@@ -139,7 +139,7 @@
 
     <section id="product" class="product">
       <div class="container text-center">
-        <h1 class="title text-white">Product</h1>
+        <h1 class="title">Product</h1>
         <div class="product-carousel">
           @foreach($products as $product)
             <div class="box-product carousel-cell">

@@ -9,12 +9,12 @@
 # General
 --------------------------------------------------------------*/
 :root{
-	--primary-color: #416D19;
-	--secondary-color: #9BCF53;
-	--light-color:#FFF67E;
+	--primary-color: #1A5319;
+	--secondary-color: #508D4E;
+	--light-color:#E7F0DC;
+	--hover-color:#597445;
+	--secondary-section-color:#80AF81;
 }
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Inter:wght@600&display=swap');
 body {
 	font-family: "Open Sans", sans-serif;
 	color: #777;
@@ -347,8 +347,8 @@ h6,
 	padding: 10px 15px;
 	transition: 0.3s;
 	font-size: 14px;
-	/* font-family: "Open Sans", sans-serif; */
-	font-family: "Edu AU VIC WA NT Hand", cursive;
+	font-family: "Open Sans", sans-serif;
+	/* font-family: "Edu AU VIC WA NT Hand", cursive; */
 }
 
 .nav-menu a:hover,
@@ -394,7 +394,7 @@ h6,
 .nav-menu .drop-down ul a:hover,
 .nav-menu .drop-down ul .active > a,
 .nav-menu .drop-down ul li:hover > a {
-	color: #70b9b0;
+	color: var(--hover-color);
 }
 
 .nav-menu .drop-down > a:after {
@@ -581,11 +581,11 @@ h6,
 	font-size: 48px;
 	font-weight: 300;
 	line-height: 56px;
-	color: #fff;
+	color: var(--secondary-section-color);
 }
 
 #hero h2 {
-	color: #eee;
+	color: var(--secondary-section-color);
 	margin-bottom: 50px;
 	font-size: 20px;
 	font-weight: 300;
@@ -660,13 +660,15 @@ h6,
 --------------------------------------------------------------*/
 section {
 	padding: 60px 0;
+	background-color: var(--secondary-section-color);
+	color: var(--light-color);
 }
 
 .section-bg,
 .section-bg a,
 .section-bg h2 {
-	background-color: #228B22;
-	color: #fff !important;
+	background-color: var(--primary-color);
+	color: var(--light-color) !important;
 }
 
 .section-title {
@@ -679,7 +681,7 @@ section {
 	font-weight: 300;
 	margin-bottom: 20px;
 	padding-bottom: 0;
-	color: #555;
+	color: var(--light-color);
 }
 
 .section-title p {
@@ -689,6 +691,9 @@ section {
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
+.about{
+	background-color: var(--secondary-section-color);
+}
 .about h3 {
 	font-weight: 400;
 	font-size: 26px;
@@ -711,46 +716,6 @@ section {
 
 .about p:last-child {
 	margin-bottom: 0;
-}
-
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-.services .icon-box {
-	margin-bottom: 20px;
-	text-align: center;
-}
-
-.services .icon {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 15px;
-}
-
-.services .icon i {
-	color: #70b9b0;
-	font-size: 42px;
-}
-
-.services .title {
-	font-weight: 700;
-	margin-bottom: 15px;
-	font-size: 18px;
-	text-transform: uppercase;
-}
-
-.services .title a {
-	color: #343a40;
-	transition: 0.3s;
-}
-
-.services .icon-box:hover .title a {
-	color: #70b9b0;
-}
-
-.services .description {
-	line-height: 24px;
-	font-size: 14px;
 }
 
 /*--------------------------------------------------------------
@@ -792,91 +757,6 @@ section {
 	border: 2px solid #203954;
 }
 
-/*--------------------------------------------------------------
-# Our Portfolio
---------------------------------------------------------------*/
-.portfolio {
-	padding: 60px 0;
-}
-
-.portfolio #portfolio-flters {
-	padding: 0;
-	margin: 0 0 35px 0;
-	list-style: none;
-	text-align: center;
-}
-
-.portfolio #portfolio-flters li {
-	cursor: pointer;
-	margin: 0 15px 15px 0;
-	display: inline-block;
-	padding: 10px 20px;
-	font-size: 12px;
-	line-height: 20px;
-	color: #777;
-	border-radius: 4px;
-	text-transform: uppercase;
-	background: white;
-	margin-bottom: 5px;
-	transition: all 0.3s ease-in-out;
-}
-
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
-	background: #70b9b0;
-	color: #fff;
-}
-
-.portfolio #portfolio-flters li:last-child {
-	margin-right: 0;
-}
-
-.portfolio .portfolio-item {
-	background: #073839;
-	overflow: hidden;
-	min-height: 200px;
-	position: relative;
-	border-radius: 4px;
-	margin: 0 0 30px 0;
-}
-
-.portfolio .portfolio-item img {
-	transition: all 0.3s ease-in-out;
-}
-
-.portfolio .portfolio-item .portfolio-info {
-	opacity: 0;
-	position: absolute;
-	transition: all 0.3s linear;
-	text-align: center;
-	top: 10%;
-	left: 0;
-	right: 0;
-}
-
-.portfolio .portfolio-item .portfolio-info h3 {
-	font-size: 22px;
-}
-
-.portfolio .portfolio-item .portfolio-info h3 a {
-	color: #fff;
-	font-weight: bold;
-}
-
-.portfolio .portfolio-item .portfolio-info a i {
-	color: #70b9b0;
-	font-size: 24px;
-}
-
-.portfolio .portfolio-item:hover img {
-	opacity: 0.4;
-	transform: scale(1.1);
-}
-
-.portfolio .portfolio-item:hover .portfolio-info {
-	opacity: 1;
-	top: calc(50% - 30px);
-}
 
 /*--------------------------------------------------------------
 # Frequently Asked Questions
@@ -930,59 +810,6 @@ section {
 	content: "\eab2" !important;
 }
 
-/*--------------------------------------------------------------
-# Our Team
---------------------------------------------------------------*/
-.team .member {
-	text-align: center;
-	margin-bottom: 20px;
-	box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-	padding: 30px 20px;
-	background: #fff;
-}
-
-.team .member img {
-	max-width: 60%;
-	border-radius: 50%;
-	margin: 0 0 30px 0;
-}
-
-.team .member h4 {
-	font-weight: 700;
-	margin-bottom: 2px;
-	font-size: 18px;
-}
-
-.team .member span {
-	font-style: italic;
-	display: block;
-	font-size: 13px;
-}
-
-.team .member p {
-	padding-top: 10px;
-	font-size: 14px;
-	font-style: italic;
-	color: #aaaaaa;
-}
-
-.team .member .social {
-	margin-top: 15px;
-}
-
-.team .member .social a {
-	color: #92cac3;
-	transition: 0.3s;
-}
-
-.team .member .social a:hover {
-	color: #3c8b81;
-}
-
-.team .member .social i {
-	font-size: 18px;
-	margin: 0 2px;
-}
 
 /*--------------------------------------------------------------
 # Product
@@ -992,6 +819,11 @@ section {
 	align-items: center;
 	background: var(--secondary-color);
 	height: 80vh;
+	color: var(--light-color);
+}
+
+.product h1{
+	color: var(--light-color);
 }
 
 .product-carousel {
