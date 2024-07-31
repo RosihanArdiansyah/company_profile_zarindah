@@ -49,7 +49,7 @@
 
 <body>
 
-  <header id="header" class="fixed-top">
+  <header id="header" class="fixed-top header">
     <div class="container">
 
       <div class="logo float-left">
@@ -72,6 +72,19 @@
 
     </div>
   </header><!-- End #header -->
+
+  <!-- Scrollspy Navbar -->
+  <nav class="scrollspy-navbar">
+    <ul>
+      <li><a href="#header" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">Tentang Kami</a></li>
+      <li><a href="#product" class="nav-link">Produk</a></li>
+      <li><a href="#article" class="nav-link">Artikel</a></li>
+      <li><a href="#contact" class="nav-link">Kontak</a></li>
+      <li><a href="#map" class="nav-link">Lokasi</a></li>
+    </ul>
+  </nav><!-- End Scrollspy Navbar -->
+
 
   <!-- ======= Hero Section ======= -->
   <section>

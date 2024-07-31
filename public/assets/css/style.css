@@ -156,73 +156,83 @@ h6,
 	font-size: 1.6rem;
 }
 
-/*****************************************/
-.solutions {
-	/* The image used */
-	background-image: url(assets/img/slider-2.jpg);
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+.scrollspy-navbar {
+	position: fixed;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	width: 40px;
+	background: var(--hover-color);
+	z-index: 1000;
+  }
 
-	/* Set a specific height */
-	min-height: 500px;
-
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.solutions .wrapper {
-	width: 100%;
-	max-width: 100%;
-	margin: auto;
-}
-
-.solutions h1 {
-	color: #fff;
-	font-weight: normal;
-	text-align: center;
-	font-size: 48px;
-}
-
-.solutions .panels {
-	list-style-type: none;
+  .scrollspy-navbar ul {
+	list-style: none;
 	padding: 0;
-}
-
-.solutions .panels li {
 	margin: 0;
-	display: block;
-	box-sizing: border-box;
-	float: left;
-}
+  }
 
-.solutions .panels li div {
-	padding: 10% 0;
+  .scrollspy-navbar ul li {
+	margin: 0;
+	padding: 0;
 	text-align: center;
-	color: #fff;
-	font-size: 11px;
-	letter-spacing: 2px;
-	cursor: pointer;
-	height: 50vh;
-}
+	position: relative;
+  }
 
-/*// ANIMATION STYLES //*/
+  .scrollspy-navbar ul li a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: transparent;
+	color: transparent;
+	font-weight: bold;
+	position: relative;
+	transition: background-color 0.3s, color 0.3s;
+  }
 
-.solutions .panels div.back {
-	transform: rotateY(90deg);
-}
-
-.solutions .panels div.front {
+  .scrollspy-navbar ul li a:before {
+	content: "•";
+	font-size: 2rem;
+	color: #007bff;
 	position: absolute;
-}
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
 
-.solutions .panels li:hover div.front {
-	animation: twirl 0.2s ease-in forwards;
-}
+  .scrollspy-navbar ul li a:hover:before,
+  .scrollspy-navbar ul li a.active:before {
+	color: #0056b3;
+  }
 
-.solutions .panels li:hover div.back {
-	animation: twirl 0.2s 0.2s ease-out forwards reverse;
-}
+  .scrollspy-navbar ul li a span {
+	position: absolute;
+	top: 50%;
+	right: 50px;
+	transform: translateY(-50%);
+	white-space: nowrap;
+	opacity: 0;
+	transition: opacity 0.3s, right 0.3s;
+	background-color: #007bff;
+	color: white;
+	padding: 5px 10px;
+	border-radius: 5px;
+  }
+
+  .scrollspy-navbar ul li a:hover span,
+  .scrollspy-navbar ul li a.active span {
+	opacity: 1;
+	right: 100%;
+  }
+
+  .scrollspy-navbar ul li a.active span {
+	background-color: #0056b3;
+  }
 
 @keyframes twirl {
 	0% {
@@ -717,98 +727,6 @@ section {
 
 .about p:last-child {
 	margin-bottom: 0;
-}
-
-/*--------------------------------------------------------------
-# Call To Action
---------------------------------------------------------------*/
-.call-to-action {
-	background: linear-gradient(rgba(1, 41, 42, 0.5), rgba(7, 56, 57, 0.5)),
-		url("../img/office.jpg") fixed center center;
-	background-size: cover;
-	padding: 60px 0;
-}
-
-.call-to-action h3 {
-	color: #fff;
-	font-size: 28px;
-	font-weight: 700;
-}
-
-.call-to-action p {
-	color: #fff;
-}
-
-.call-to-action .cta-btn {
-	font-family: "Lato", sans-serif;
-	font-weight: 400;
-	font-size: 16px;
-	letter-spacing: 1px;
-	display: inline-block;
-	padding: 8px 28px;
-	border-radius: 25px;
-	transition: 0.5s;
-	margin-top: 10px;
-	border: 2px solid #fff;
-	color: #fff;
-}
-
-.call-to-action .cta-btn:hover {
-	background: #203954;
-	border: 2px solid #203954;
-}
-
-
-/*--------------------------------------------------------------
-# Frequently Asked Questions
---------------------------------------------------------------*/
-.faq {
-	padding: 60px 0;
-}
-
-.faq .faq-list {
-	padding: 0;
-	list-style: none;
-}
-
-.faq .faq-list li {
-	padding: 0 0 20px 25px;
-}
-
-.faq .faq-list a {
-	display: block;
-	position: relative;
-	font-family: #70b9b0;
-	font-size: 18px;
-	font-weight: 500;
-}
-
-.faq .faq-list i {
-	font-size: 18px;
-	position: absolute;
-	left: -25px;
-	top: 6px;
-}
-
-.faq .faq-list p {
-	margin-bottom: 20px;
-	font-size: 15px;
-}
-
-.faq .faq-list a.collapse {
-	color: #70b9b0;
-}
-
-.faq .faq-list a.collapsed {
-	color: #343a40;
-}
-
-.faq .faq-list a.collapsed:hover {
-	color: #70b9b0;
-}
-
-.faq .faq-list a.collapsed i::before {
-	content: "\eab2" !important;
 }
 
 
