@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\articleController;
+use App\Http\Controllers\unitController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,4 @@ use App\Http\Controllers\articleController;
 // });
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/article', [articleController::class, 'index']);
+Route::get('/products', [unitController::class, 'index']);

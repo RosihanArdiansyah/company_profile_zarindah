@@ -3,17 +3,17 @@
 @section('content')
 <section class="section-title">
     <h1><i class="icofont-building-alt"></i></h1>
-    <h3>Artikel</h3>    
+    <h3>Nama Produk</h3>    
 </section>
 
 <main>
     <section class="content-page">
         <div class="grid-container">
-        @foreach($articles as $article)
+        @foreach($products as $product)
             <div class="grid-item">
-                <h1 class="title">{{ $article['title'] }}</h1>
-                <img src="{{ asset($article['image']) }}" alt="{{ $article['title'] }}">
-                <p>{{ $article['description'] }}</p>
+                <h1 class="title">{{ $product['title'] }}</h1>
+                <img src="{{ asset($product['image']) }}" alt="{{ $product['title'] }}">
+                <p>{{ $product['description'] }}</p>
             </div>
         @endforeach
         </div>
