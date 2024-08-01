@@ -20,5 +20,6 @@ use App\Http\Controllers\unitController;
 //     return view('welcome');
 // });
 Route::get('/', [HomeController::class, 'index']);
-Route::get('/article', [articleController::class, 'index']);
-Route::get('/products', [unitController::class, 'index']);
+Route::get('/article', [articleController::class, 'index'])->name('article');
+Route::get('/products', [unitController::class, 'index'])->name('products');
+Route::get('/article/{slug}', [articleController::class, 'show'])->name('article.content');
