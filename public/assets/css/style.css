@@ -849,11 +849,11 @@ section {
 # article page
 --------------------------------------------------------------*/
 
-.section-title {
+.content-title {
 	background-color: var(--secondary-color);
 	height: 240px;
 }
-.section-title h1 {
+.content-title h1 {
 	display: flex;
 	align-items: center;
 	justify-content: center;

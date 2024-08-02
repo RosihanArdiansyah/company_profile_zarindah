@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="section-title">
+<section class="section-title content-title">
     <h1><i class="icofont-building-alt"></i></h1>
     <h3>Nama Produk</h3>    
 </section>
