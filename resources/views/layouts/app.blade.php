@@ -33,20 +33,21 @@
   <header id="header" class="fixed-top header">
     <div class="container">
 
-      <div class="logo float-left">
+    <div class="logo float-left">
+        <a href="/" class="text-white">
+            <img src="assets/img/logo_tok.webp" alt="" class="img-fluid">
+            
+        </a>
+        <span class="text-white font-weight-bold">Zarindah<br>Group</span>
+    </div>
 
-        <!-- <h1 class="text-light"><a href="index.html"><span>Our-Compnay Associate</span></a></h1> -->
-        <a href="/"><img src="assets/img/logo_tok.webp" alt="" class="img-fluid"></a>
-      </div>
-
-      <nav class="nav-menu float-right d-none d-lg-block">
+      <nav class="nav-menu float-right d-none d-lg-block font-weight-bold">
         <ul>
           <li class="active"><a href="#header">Home</a></li>
           <li><a href="#about">Tentang Kami</a></li>
           <li><a href="#product">Produk</a></li>
           <li><a href="#article">Artikel</a></li>
           <li><a href="#contact">Kontak</a></li>
-          <li><a href="#map">Lokasi</a></li>
         </ul>
 
       </nav><!-- .nav-menu -->
