@@ -6,47 +6,86 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    //
-    public function index()
+    protected $products;
+    protected $promo;
+    protected $article;
+
+    public function __construct()
     {
-        $products = [
+        $this->products = [
             [
                 'image' => 'assets/img/placeholder.jpg',
-                'title' => 'Unit',
+                'title' => 'Bantaeng',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
                 'image' => 'assets/img/placeholder.jpg',
-                'title' => 'Unit',
+                'title' => 'Bukukkumba',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
                 'image' => 'assets/img/placeholder.jpg',
-                'title' => 'Unit',
+                'title' => 'Gowa',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
                 'image' => 'assets/img/placeholder.jpg',
-                'title' => 'Unit',
+                'title' => 'Pare-pare',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
                 'image' => 'assets/img/placeholder.jpg',
-                'title' => 'Unit',
+                'title' => 'Belopa',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
                 'image' => 'assets/img/placeholder.jpg',
-                'title' => 'Unit',
+                'title' => 'Mamuju',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
                 'image' => 'assets/img/placeholder.jpg',
-                'title' => 'Unit',
+                'title' => 'Maros',
+                'description' => 'Lorem Ipsum Dolor si amet'
+            ],
+            [
+                'image' => 'assets/img/placeholder.jpg',
+                'title' => 'Bogor',
+                'description' => 'Lorem Ipsum Dolor si amet'
+            ],
+            [
+                'image' => 'assets/img/placeholder.jpg',
+                'title' => 'Sengkang',
+                'description' => 'Lorem Ipsum Dolor si amet'
+            ],
+            [
+                'image' => 'assets/img/placeholder.jpg',
+                'title' => 'Bandung',
+                'description' => 'Lorem Ipsum Dolor si amet'
+            ],
+            [
+                'image' => 'assets/img/placeholder.jpg',
+                'title' => 'Gorontalo',
+                'description' => 'Lorem Ipsum Dolor si amet'
+            ],
+            [
+                'image' => 'assets/img/placeholder.jpg',
+                'title' => 'Kendari',
+                'description' => 'Lorem Ipsum Dolor si amet'
+            ],
+            [
+                'image' => 'assets/img/placeholder.jpg',
+                'title' => 'Malili',
+                'description' => 'Lorem Ipsum Dolor si amet'
+            ],
+            [
+                'image' => 'assets/img/placeholder.jpg',
+                'title' => 'Palopo',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
         ];
-        $promo = [
+
+        $this->promo = [
             [
                 'image' => 'assets/img/footer-bg.png',
                 'title' => 'Promo',
@@ -66,6 +105,22 @@ class HomeController extends Controller
                 'active' => false
             ],
         ];
+    }
+    //
+    public function index()
+    {
+        $products = $this->products;
+        $promo = $this->promo;
         return view('welcome', compact('products','promo'));
+    }
+
+    public function about()
+    {
+        return view('about');
+    }
+
+    public function contact()
+    {
+        return view('contact');
     }
 }

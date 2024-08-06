@@ -41,16 +41,15 @@
         <span class="text-white font-weight-bold">Zarindah<br>Group</span>
     </div>
 
-      <nav class="nav-menu float-right d-none d-lg-block font-weight-bold">
-        <ul>
-          <li class="active"><a href="#header">Home</a></li>
-          <li><a href="#about">Tentang Kami</a></li>
-          <li><a href="#product">Produk</a></li>
-          <li><a href="#article">Artikel</a></li>
-          <li><a href="#contact">Kontak</a></li>
-        </ul>
-
-      </nav><!-- .nav-menu -->
+    <nav class="nav-menu float-right d-none d-lg-block font-weight-bold">
+      <ul>
+          <li class="{{ Route::currentRouteName() == 'home' ? 'active' : '' }}"><a href="{{ route('home') }}">Home</a></li>
+          <li class="{{ Route::currentRouteName() == 'about' ? 'active' : '' }}"><a href="{{ route('about') }}">Tentang Kami</a></li>
+          <li class="{{ Route::currentRouteName() == 'products' ? 'active' : '' }}"><a href="{{ route('products') }}">Produk</a></li>
+          <li class="{{ Route::currentRouteName() == 'article' ? 'active' : '' }}"><a href="{{ route('article') }}">Artikel</a></li>
+          <li class="{{ Route::currentRouteName() == 'contact' ? 'active' : '' }}"><a href="{{ route('contact') }}">Kontak</a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
 
     </div>
   </header><!-- End #header -->

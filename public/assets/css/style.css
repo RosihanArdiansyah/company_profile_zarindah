@@ -13,7 +13,7 @@
 	--secondary-color: #096b3c;
 	--light-color: #e1f0da;
 	--hover-color: #e7b10a;
-	--secondary-section-color: #80af81;
+	--secondary-section-color: #5b9b5d;
 	--menu-color: #f3ff90;
 }
 body {
@@ -43,6 +43,10 @@ h6,
 	font-family: "Lato", sans-serif;
 }
 
+.custom-card {
+	background-color: var(--secondary-color);
+	color: var(--menu-color);
+  }
 .carousel-item {
 	height: 80vh;
 	min-height: 350px;
@@ -908,7 +912,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-	background: var(--primary-color);
+	background: linear-gradient(to top, var(--primary-color), var(--secondary-color));
 	padding: 30px 0;
 	color: #fff;
 	font-size: 14px;
