@@ -41,6 +41,7 @@ h5,
 h6,
 .font-primary {
 	font-family: "Lato", sans-serif;
+	color: var(--menu-color);
 }
 
 .custom-card {
@@ -56,6 +57,23 @@ h6,
 	-o-background-size: cover;
 	background-size: cover;
 }
+
+.about-card {
+	background-color: #073d24;
+	color: var(--menu-color);
+	margin-bottom: 20px;
+	padding: 20px;
+	border-radius: 8px;
+  }
+  .about-list-item {
+	background-color: #073d24;
+	color: var(--menu-color);
+  }
+  .img-fluid {
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px;
+  }
 
 .main {
 	display: flex;
@@ -676,11 +694,11 @@ section {
 	align-items: center;
 	background: var(--secondary-color);
 	height: 80vh;
-	color: var(--light-color);
+	color: var(--menu-color);
 }
 
 .product h1 {
-	color: var(--light-color);
+	color: var(--menu-color);
 }
 
 .product-carousel {
@@ -711,12 +729,7 @@ section {
 	justify-content: space-evenly;
 }
 
-.price {
-	font-size: 20px;
-	letter-spacing: 2px;
-	margin: 10px 0px;
-	color: #dea402;
-}
+
 
 .area-product .product-title {
 	text-align: start;
@@ -724,7 +737,7 @@ section {
 
 .area-product p {
 	font-size: 13px;
-	color: #ececec;
+	color: var(--light-color);
 }
 
 .area-product button {

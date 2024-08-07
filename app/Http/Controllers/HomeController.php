@@ -105,13 +105,45 @@ class HomeController extends Controller
                 'active' => false
             ],
         ];
+
+        $this->articles = [
+            [
+                'title' => 'Article 1',
+                'image' => 'assets/img/placeholder.jpg',
+                'description' => 'Description of article 1',
+                'date' => date('Y-m-d'),
+                'slug' => 'article1'
+            ],
+            [
+                'title' => 'Article 2',
+                'image' => 'assets/img/placeholder.jpg',
+                'description' => 'Description of article 2',
+                'date' => date('Y-m-d'),
+                'slug' => 'article2'
+            ],
+            [
+                'title' => 'Article 3',
+                'image' => 'assets/img/placeholder.jpg',
+                'description' => 'Description of article 3',
+                'date' => date('Y-m-d'),
+                'slug' => 'article3'
+            ],
+            [
+                'title' => 'Article 4',
+                'image' => 'assets/img/placeholder.jpg',
+                'description' => 'Description of article 3',
+                'date' => date('Y-m-d'),
+                'slug' => 'article4'
+            ]
+        ];
     }
     //
     public function index()
     {
         $products = $this->products;
         $promo = $this->promo;
-        return view('welcome', compact('products','promo'));
+        $articles = $this->articles;
+        return view('welcome', compact('products','promo','articles'));
     }
 
     public function about()
