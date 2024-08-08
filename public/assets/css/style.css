@@ -335,7 +335,7 @@ h6,
 	opacity: 0;
 	visibility: hidden;
 	padding: 10px 0;
-	background: #fff;
+	background: var(--primary-color);
 	box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 	transition: ease all 0.3s;
 }
@@ -357,6 +357,10 @@ h6,
 	font-weight: 500;
 	text-transform: none;
 	color: #25564f;
+}
+
+.nav-menu .dropdown-menu{
+	background-color: var(--primary-color);
 }
 
 .nav-menu .drop-down ul a:hover,

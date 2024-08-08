@@ -22,8 +22,6 @@
     <link href="{{asset('assets/vendor/venobox/venobox.css')}}" rel="stylesheet">
     <link href="{{asset('assets/vendor/flickity.css/flickity.css')}}" rel="stylesheet"/>
 
-    @yield('header')
-
     <!-- Template Main CSS File -->
     <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
 </head>
@@ -42,14 +40,23 @@
     </div>
 
     <nav class="nav-menu float-right d-none d-lg-block font-weight-bold">
-      <ul>
-          <li class="{{ Route::currentRouteName() == 'home' ? 'active' : '' }}"><a href="{{ route('home') }}">Home</a></li>
-          <li class="{{ Route::currentRouteName() == 'about' ? 'active' : '' }}"><a href="{{ route('about') }}">Tentang Kami</a></li>
-          <li class="{{ Route::currentRouteName() == 'products' ? 'active' : '' }}"><a href="{{ route('products') }}">Produk</a></li>
-          <li class="{{ Route::currentRouteName() == 'article' ? 'active' : '' }}"><a href="{{ route('article') }}">Artikel</a></li>
-          <li class="{{ Route::currentRouteName() == 'contact' ? 'active' : '' }}"><a href="{{ route('contact') }}">Kontak</a></li>
-      </ul>
-    </nav><!-- .nav-menu -->
+			<ul>
+				<li class="{{ Route::currentRouteName() == 'home' ? 'active' : '' }}"><a href="{{ route('home') }}">Home</a></li>
+				<li class="{{ Route::currentRouteName() == 'about' ? 'active' : '' }}"><a href="{{ route('about') }}">Tentang Kami</a></li>
+				<li class="nav-item dropdown {{ Route::currentRouteName() == 'product' ? 'active' : '' }}">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Produk
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						@foreach($products as $product)
+							<a class="dropdown-item {{ request()->is('product/' . $product['slug']) ? 'active' : '' }}" href="{{ route('product', ['slug' => $product['slug']]) }}">{{ $product['title'] }}</a>
+						@endforeach
+					</div>
+				</li>
+				<li class="{{ Route::currentRouteName() == 'article' ? 'active' : '' }}"><a href="{{ route('article') }}">Artikel</a></li>
+				<li class="{{ Route::currentRouteName() == 'contact' ? 'active' : '' }}"><a href="{{ route('contact') }}">Kontak</a></li>
+			</ul>
+		</nav><!-- .nav-menu -->
 
     </div>
   </header><!-- End #header -->
@@ -78,9 +85,6 @@
     <script src="{{asset('assets/vendor/venobox/venobox.min.js')}}"></script>
     <script src="{{asset('assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
     <script src="{{asset('assets/vendor/flickity.js/flickity.pkgd.min.js')}}"></script>
-
-    <!-- Template Main JS File -->
-    <script src="{{asset('assets/js/main.js')}}"></script>
 
     <!-- Template Main JS File -->
     <script src="{{asset('assets/js/main.js')}}"></script>

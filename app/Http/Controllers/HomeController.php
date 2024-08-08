@@ -16,71 +16,85 @@ class HomeController extends Controller
             [
                 'image' => 'assets/img/placeholder.jpg',
                 'title' => 'Bantaeng',
+                'slug' => 'bantaeng',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
                 'image' => 'assets/img/placeholder.jpg',
                 'title' => 'Bukukkumba',
+                'slug' => 'bukukkumba',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
                 'image' => 'assets/img/placeholder.jpg',
                 'title' => 'Gowa',
+                'slug' => 'gowa',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
                 'image' => 'assets/img/placeholder.jpg',
                 'title' => 'Pare-pare',
+                'slug' => 'pare-pare',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
                 'image' => 'assets/img/placeholder.jpg',
                 'title' => 'Belopa',
+                'slug' => 'belopa',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
                 'image' => 'assets/img/placeholder.jpg',
                 'title' => 'Mamuju',
+                'slug' => 'mamuju',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
                 'image' => 'assets/img/placeholder.jpg',
                 'title' => 'Maros',
+                'slug' => 'maros',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
                 'image' => 'assets/img/placeholder.jpg',
                 'title' => 'Bogor',
+                'slug' => 'bogor',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
                 'image' => 'assets/img/placeholder.jpg',
                 'title' => 'Sengkang',
+                'slug' => 'sengkang',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
                 'image' => 'assets/img/placeholder.jpg',
                 'title' => 'Bandung',
+                'slug' => 'bandung',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
                 'image' => 'assets/img/placeholder.jpg',
                 'title' => 'Gorontalo',
+                'slug' => 'gorontalo',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
                 'image' => 'assets/img/placeholder.jpg',
                 'title' => 'Kendari',
+                'slug' => 'kendari',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
                 'image' => 'assets/img/placeholder.jpg',
                 'title' => 'Malili',
+                'slug' => 'malili',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
                 'image' => 'assets/img/placeholder.jpg',
                 'title' => 'Palopo',
+                'slug' => 'palopo',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
         ];
@@ -148,11 +162,20 @@ class HomeController extends Controller
 
     public function about()
     {
-        return view('about');
+        $products = $this->products;
+        return view('about', compact('products'));
     }
 
     public function contact()
     {
-        return view('contact');
+        $products = $this->products;
+        return view('contact', compact('products'));
+    }
+
+    public function article()
+    {
+        $products = $this->products;
+        $articles = $this->articles;
+        return view('article.article', compact('products','articles'));
     }
 }

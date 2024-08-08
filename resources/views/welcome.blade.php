@@ -109,7 +109,7 @@
             <h1 class="product-title text-white">{{ $product['title'] }}</h1>
             <p>{{ $product['description'] }}</p>
             <button type="button" class="btn btn-info btn-sm"
-              onclick="window.location.href='{{ route('products') }}'">Detail</button>
+              onclick="window.location.href='{{ route('product', ['slug' => $product['slug']]) }}'">Detail</button>
           </div>
         </div>
         @endforeach
