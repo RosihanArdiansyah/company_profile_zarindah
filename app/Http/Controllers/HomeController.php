@@ -163,19 +163,19 @@ class HomeController extends Controller
     public function about()
     {
         $products = $this->products;
-        return view('about', compact('products'));
+        return view('about');
     }
 
     public function contact()
     {
         $products = $this->products;
-        return view('contact', compact('products'));
+        return view('contact');
     }
 
     public function article()
     {
         $products = $this->products;
         $articles = $this->articles;
-        return view('article.article', compact('products','articles'));
+        return view('article.article', compact('articles'));
     }
 }

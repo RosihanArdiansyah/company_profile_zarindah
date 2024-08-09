@@ -109,7 +109,14 @@ class unitController extends Controller
 
     public function show($slug)
     {
-        $products = $this->products;
+        // $products = $this->products;
+        // Filter the articles array to find the one that matches the slug
+        $product = array_filter($this->products, function ($products) use ($slug) {
+            return $products['slug'] === $slug;
+        });
+
+        // Since array_filter returns an array, we'll reset the array pointer and take the first element
+        $products = reset($product);
         return view('product.product', compact('products'), ['slug' => $slug]);
     }
 }

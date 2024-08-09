@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+@php
+    $productNav = [
+        [
+            'title' => 'Bantaeng',
+            'slug' => 'bantaeng',
+        ],
+        [
+            'title' => 'Bukukkumba',
+            'slug' => 'bukukkumba',
+        ],
+        [
+            'title' => 'Gowa',
+            'slug' => 'gowa',
+        ],
+        [
+            'title' => 'Pare-pare',
+            'slug' => 'pare-pare',
+        ],
+        [
+            'title' => 'Belopa',
+            'slug' => 'belopa',
+        ],
+        [
+            'title' => 'Mamuju',
+            'slug' => 'mamuju',
+        ],
+        [
+            'title' => 'Maros',
+            'slug' => 'maros',
+        ],
+        [
+            'title' => 'Bogor',
+            'slug' => 'bogor',
+        ],
+        [
+            'title' => 'Sengkang',
+            'slug' => 'sengkang',
+        ],
+        [
+            'title' => 'Bandung',
+            'slug' => 'bandung',
+        ],
+        [
+            'title' => 'Gorontalo',
+            'slug' => 'gorontalo',
+        ],
+        [
+            'title' => 'Kendari',
+            'slug' => 'kendari',
+        ],
+        [
+            'title' => 'Malili',
+            'slug' => 'malili',
+        ],
+        [
+            'title' => 'Palopo',
+            'slug' => 'palopo',
+        ],
+    ];
+@endphp
 
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Our-Company Associate</title>
+    <title>Zarindah Group</title>
     <meta name="author" content="Rosihan">
 
     <!-- Favicons -->
@@ -48,7 +108,7 @@
 						Produk
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						@foreach($products as $product)
+						@foreach($productNav as $product)
 							<a class="dropdown-item {{ request()->is('product/' . $product['slug']) ? 'active' : '' }}" href="{{ route('product', ['slug' => $product['slug']]) }}">{{ $product['title'] }}</a>
 						@endforeach
 					</div>
