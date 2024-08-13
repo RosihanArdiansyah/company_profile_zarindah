@@ -114,7 +114,7 @@
 					</div>
 				</li>
 				<li class="{{ Route::currentRouteName() == 'article' ? 'active' : '' }}"><a href="{{ route('article') }}">Artikel</a></li>
-				<li class="{{ Route::currentRouteName() == 'contact' ? 'active' : '' }}"><a href="{{ route('contact') }}">Kontak</a></li>
+				<li class="{{ Route::currentRouteName() == 'contact' ? 'active' : '' }}"><a href="{{ route('contact') }}">Top Manajemen</a></li>
 			</ul>
 		</nav><!-- .nav-menu -->
 
@@ -126,15 +126,46 @@
     <footer id="footer">
         <!-- Footer Content -->
         <div class="container">
-            <div class="copyright">
-                &copy; Copyright <strong><span>Our-Company Associate</span></strong>. All Rights Reserved
+
+            <div class="row contact">
+
+                <div class="col-lg-4 col-md-6">
+                <div class="contact-about">
+                    <h3>Zarindah Group</h3>
+                    <p>Delivering relevant technologies for our times</p>
+                </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                <div class="contact-about">
+                    <h3>Social-Links</h3>
+                    <div class="social-links">
+                    <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
+                    <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="info">
+                        <div>
+                            <i class="icofont-google-map"></i>
+                            <p>Velile Estate, 123 Vamba Rd, Johannesburg, Gauteng, 2000</p>
+                        </div>
+
+                        <div>
+                            <i class="icofont-envelope"></i>
+                            <p>clients@Our-Compnay.com </p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
             </div>
-            <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you purchased the pro version. -->
-                <!-- Licensing: You must keep the author's name and the link intact. -->
-                Designed by <a href="https://bootstrapmade.com/free-one-page-bootstrap-template/">BootstrapMade.com</a>
-            </div>
+
         </div>
     </footer>
     <!-- Vendor JS Files -->
