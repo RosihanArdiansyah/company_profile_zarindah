@@ -12,25 +12,25 @@ class unitController extends Controller
     {
         $this->products = [
             [
-                'image' => 'assets/img/placeholder.jpg',
+                'image' => 'assets\img\produk\bantaeng\LOGO\natura_bantaeng_logo.png',
                 'title' => 'Bantaeng',
                 'slug' => 'bantaeng',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
-                'image' => 'assets/img/placeholder.jpg',
+                'image' => 'assets\img\produk\bulukkumba\Logo\pzb1.png',
                 'title' => 'Bukukkumba',
                 'slug' => 'bukukkumba',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
-                'image' => 'assets/img/placeholder.jpg',
+                'image' => 'assets\img\produk\gowa\logo\zarindah mas.png',
                 'title' => 'Gowa',
                 'slug' => 'gowa',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
-                'image' => 'assets/img/placeholder.jpg',
+                'image' => 'assets\img\produk\pare-pare\PAREPARE-2022.png',
                 'title' => 'Pare-pare',
                 'slug' => 'pare-pare',
                 'description' => 'Lorem Ipsum Dolor si amet'
@@ -42,25 +42,25 @@ class unitController extends Controller
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
-                'image' => 'assets/img/placeholder.jpg',
+                'image' => 'assets\img\produk\mamuju\logo\gz.png',
                 'title' => 'Mamuju',
                 'slug' => 'mamuju',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
-                'image' => 'assets/img/placeholder.jpg',
+                'image' => 'assets\img\produk\maros\maros.png',
                 'title' => 'Maros',
                 'slug' => 'maros',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
-                'image' => 'assets/img/placeholder.jpg',
+                'image' => 'assets\img\produk\bogor\Logo\bci.png',
                 'title' => 'Bogor',
                 'slug' => 'bogor',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
-                'image' => 'assets/img/placeholder.jpg',
+                'image' => 'assets\img\produk\sengkang\gsz.png',
                 'title' => 'Sengkang',
                 'slug' => 'sengkang',
                 'description' => 'Lorem Ipsum Dolor si amet'
@@ -78,19 +78,19 @@ class unitController extends Controller
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
-                'image' => 'assets/img/placeholder.jpg',
+                'image' => 'assets\img\produk\kendari\gzk1.png',
                 'title' => 'Kendari',
                 'slug' => 'kendari',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
-                'image' => 'assets/img/placeholder.jpg',
+                'image' => 'assets\img\produk\malili\zarindah puncak.png',
                 'title' => 'Malili',
                 'slug' => 'malili',
                 'description' => 'Lorem Ipsum Dolor si amet'
             ],
             [
-                'image' => 'assets/img/placeholder.jpg',
+                'image' => 'assets\img\produk\palopo\gjp.png',
                 'title' => 'Palopo',
                 'slug' => 'palopo',
                 'description' => 'Lorem Ipsum Dolor si amet'
