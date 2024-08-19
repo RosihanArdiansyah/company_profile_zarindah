@@ -140,8 +140,10 @@
                 <div class="contact-about">
                     <h3>Social-Links</h3>
                     <div class="social-links">
-                    <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
-                    <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/i6x7F7U7EKmWDBi1/?mibextid=JRoKGi" class="facebook"><i class="icofont-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@new.zarindah" class="tiktok"><i class="icofont-tiktok"></i></a>
+                    <a href="https://www.instagram.com/newzarindah" class="instagram"><i class="icofont-instagram"></i></a>
+                    
                     </div>
                 </div>
                 </div>
@@ -150,7 +152,7 @@
                     <div class="info">
                         <div>
                             <i class="icofont-google-map"></i>
-                            <p>Velile Estate, 123 Vamba Rd, Johannesburg, Gauteng, 2000</p>
+                            <p>Jl. Pelita Raya No.42, Balla Parang, Kec. Rappocini, Kota Makassar, Sulawesi Selatan</p>
                         </div>
 
                         <div>
