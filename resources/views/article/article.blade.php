@@ -16,7 +16,7 @@
 					<img
 						src="{{ asset($article['image']) }}"
 						alt="{{ $article['title'] }}" />
-					<p>{{ $article["description"] }}</p>
+					<p style="margin-top:10px;">{{ $article["description"] }}</p>
 				</div>
 			</a>
 			@endforeach

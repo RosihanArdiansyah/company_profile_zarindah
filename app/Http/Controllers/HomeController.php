@@ -101,20 +101,14 @@ class HomeController extends Controller
 
         $this->promo = [
             [
-                'image' => 'assets/img/footer-bg.png',
-                'title' => 'Promo',
+                'image' => 'assets/img/promo/IMG_1336.webp',
+                'title' => 'Promo Kemerdekaan',
                 'description' => 'Lorem Ipsum Dolor si amet',
                 'active' => true
             ],
             [
-                'image' => 'assets/img/slider-2.jpg',
-                'title' => 'Promo',
-                'description' => 'Lorem Ipsum Dolor si amet',
-                'active' => false
-            ],
-            [
-                'image' => 'assets/img/covid.jpg',
-                'title' => 'Promo',
+                'image' => 'assets/img/promo/IMG_1329.webp',
+                'title' => 'Promo Kemerdekaan',
                 'description' => 'Lorem Ipsum Dolor si amet',
                 'active' => false
             ],

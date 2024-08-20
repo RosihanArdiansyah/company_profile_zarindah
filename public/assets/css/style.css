@@ -778,6 +778,12 @@ section {
 .carousel-cell:hover .article-title {
 	text-decoration: underline; /* Add underline on hover */
 }
+.carousel-caption{
+	background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% transparency */
+	width: 100%;
+	left: 0;
+	bottom: 10px;
+}
 
 /*--------------------------------------------------------------
 # Contact Us
@@ -932,7 +938,11 @@ section {
 	border: 1px solid #ccc;
 	padding: 10px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	background-color: #fff;
+	background-color: var(--primary-color);
+	border-radius: 16px;
+	display: grid;
+	justify-content: center;
+	justify-items: center;
 }
 
 .grid-item img {
@@ -941,14 +951,23 @@ section {
 }
 
 .grid-item .title {
-	font-size: 1.2em;
+	font-size: 1.5em;
 	margin: 10px 0;
+	transition: color 0.3s ease; /* Optional: Smooth transition of text color */
 }
 
 .grid-item p {
-	font-size: 1em;
+	font-size: 1.2em;
 	line-height: 1.4;
+	color: var(--menu-color);
+	transition: color 0.3s ease; /* Optional: Smooth transition of text color */
 }
+
+.grid-item:hover .title,
+.grid-item:hover p {
+    color: white; /* Change text color to white on hover */
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
