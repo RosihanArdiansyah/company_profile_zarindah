@@ -432,7 +432,7 @@ h6,
 .mobile-nav a {
 	display: block;
 	position: relative;
-	color: #d2ece9;
+	color: var(--menu-color);
 	padding: 10px 20px;
 	font-weight: 500;
 }
@@ -440,7 +440,7 @@ h6,
 .mobile-nav a:hover,
 .mobile-nav .active > a,
 .mobile-nav li:hover > a {
-	color: #898121;
+	color: var(--hover-color);
 	text-decoration: none;
 }
 
@@ -467,6 +467,10 @@ h6,
 
 .mobile-nav .drop-down li {
 	padding-left: 20px;
+}
+
+.mobile-nav .dropdown-item{
+	background-color: var(--primary-color);
 }
 
 .mobile-nav-toggle {
