@@ -68,7 +68,12 @@
     <title>Zarindah Group</title>
     <meta name="author" content="Rosihan">
 
-    <!-- Favicons -->
+     <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+    
 
     <!-- Google Fonts -->
     <link
@@ -132,7 +137,7 @@
                 <div class="col-lg-4 col-md-6">
                 <div class="contact-about">
                     <h3>Zarindah Group</h3>
-                    <p>Delivering relevant technologies for our times</p>
+                    <p>Hunian nyaman, mudah dimiliki</p>
                 </div>
                 </div>
 
@@ -156,8 +161,8 @@
                         </div>
 
                         <div>
-                            <i class="icofont-envelope"></i>
-                            <p>clients@Our-Compnay.com </p>
+                            <i class="icofont-ui-dial-phone"></i>
+                            <p>0821-3488-8856</p>
                         </div>
 
 
