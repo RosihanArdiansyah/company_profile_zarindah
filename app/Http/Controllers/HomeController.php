@@ -9,6 +9,7 @@ class HomeController extends Controller
     protected $products;
     protected $promo;
     protected $article;
+    protected $managers;
 
     public function __construct()
     {
@@ -144,6 +145,30 @@ class HomeController extends Controller
                 'slug' => 'article4'
             ]
         ];
+
+        $this->managers = [
+            [
+                'name'=>'ARYA',
+                'position'=>'Marketing Executive',
+                'image'=>'assets/img/managerial/ARYA.webp'
+            ],
+            [
+                'name'=>'FIRA',
+                'position'=>'Marketing Executive',
+                'image'=>'assets/img/managerial/FIRA.webp'
+            ],
+            [
+                'name'=>'SANTI',
+                'position'=>'Marketing Executive',
+                'image'=>'assets/img/managerial/SANTI.webp'
+            ],
+            [
+                'name'=>'TINA',
+                'position'=>'Marketing Executive',
+                'image'=>'assets/img/managerial/TINA.webp'
+            ],
+        ];
+
     }
     //
     public function index()
@@ -162,8 +187,8 @@ class HomeController extends Controller
 
     public function contact()
     {
-        $products = $this->products;
-        return view('contact');
+        $managers = $this->managers;
+        return view('contact', compact('managers'));
     }
 
     public function article()
