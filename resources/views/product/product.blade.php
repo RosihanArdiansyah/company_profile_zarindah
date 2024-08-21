@@ -12,7 +12,18 @@
 <main >
     <section class="content-page " >
         <div class="grid-container" style="margin-top:100px;">
-            <h3>ISI</h3>
+            <!-- <h3>ISI</h3> -->
+            @foreach($products['type'] as $type)
+			<div class="grid-item-link">
+				<div class="grid-item">
+					<!-- <h1 class="title">{{ $type["name"] }}</h1> -->
+					<img
+						src="{{ asset($type['image']) }}"
+						alt="{{ $type['name'] }}" />
+					<p style="margin-top:10px;">{{ $type["name"] }}</p>
+				</div>
+            </div>
+			@endforeach
         </div>
     </section>
 </main>
