@@ -8,7 +8,7 @@ class HomeController extends Controller
 {
     protected $products;
     protected $promo;
-    protected $article;
+    protected $articles;
     protected $managers;
 
     public function __construct()
@@ -148,27 +148,26 @@ class HomeController extends Controller
 
         $this->managers = [
             [
-                'name'=>'ARYA',
-                'position'=>'Marketing Executive',
-                'image'=>'assets/img/managerial/ARYA.webp'
+                'name' => 'ARYA',
+                'position' => 'Marketing Executive',
+                'image' => 'assets/img/managerial/ARYA.webp'
             ],
             [
-                'name'=>'FIRA',
-                'position'=>'Marketing Executive',
-                'image'=>'assets/img/managerial/FIRA.webp'
+                'name' => 'FIRA',
+                'position' => 'Marketing Executive',
+                'image' => 'assets/img/managerial/FIRA.webp'
             ],
             [
-                'name'=>'SANTI',
-                'position'=>'Marketing Executive',
-                'image'=>'assets/img/managerial/SANTI.webp'
+                'name' => 'SANTI',
+                'position' => 'Marketing Executive',
+                'image' => 'assets/img/managerial/SANTI.webp'
             ],
             [
-                'name'=>'TINA',
-                'position'=>'Marketing Executive',
-                'image'=>'assets/img/managerial/TINA.webp'
+                'name' => 'TINA',
+                'position' => 'Marketing Executive',
+                'image' => 'assets/img/managerial/TINA.webp'
             ],
         ];
-
     }
     //
     public function index()
@@ -176,7 +175,7 @@ class HomeController extends Controller
         $products = $this->products;
         $promo = $this->promo;
         $articles = $this->articles;
-        return view('welcome', compact('products','promo','articles'));
+        return view('welcome', compact('products', 'promo', 'articles'));
     }
 
     public function about()
