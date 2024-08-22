@@ -13,4 +13,7 @@
 4. Untuk menambahkan gambar, masukkan file ke dalam :
    ```bash
    public/assets/img
+5. Untuk menjalankan aplikasi, silahkan jalankan:
+   ```bash
+   php artisan serve
 
