@@ -9,12 +9,12 @@
   <div class="grid-container">
 			@foreach($managers as $manager)
 			<div class="grid-item-link">
-				<div class="grid-item">
-					<h1 class="title">{{ $manager["name"] }}</h1>
+				<div class="grid-item border-gold">
+					<!-- <h1 class="title">{{ $manager["name"] }}</h1> -->
 					<img
 						src="{{ asset($manager['image']) }}"
 						alt="{{ $manager['name'] }}" />
-					<p style="margin-top:10px;">{{ $manager["position"] }}</p>
+					<!-- <p style="margin-top:10px;">{{ $manager["position"] }}</p> -->
 				</div>
       </div>
 			@endforeach
