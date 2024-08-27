@@ -11,7 +11,7 @@
 			<a
 				href="{{ route('article.content', ['slug' => $article['slug']]) }}"
 				class="grid-item-link">
-				<div class="grid-item">
+				<div class="grid-item border-gold">
 					<h1 class="title">{{ $article["title"] }}</h1>
 					<img
 						src="{{ asset($article['image']) }}"

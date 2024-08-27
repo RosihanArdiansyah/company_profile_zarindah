@@ -15,6 +15,7 @@
 	--hover-color: #e7b10a;
 	--secondary-section-color: #5b9b5d;
 	--menu-color: #f3ff90;
+	--border-color:  #CE7D00;
 }
 body {
 	font-family: "Open Sans", sans-serif;
@@ -42,6 +43,19 @@ h6,
 .font-primary {
 	font-family: "Lato", sans-serif;
 	color: var(--menu-color);
+}
+
+.border-gold {
+    border: 10px solid #CE7D00 !important; /* Gold color */
+	border-radius: 8px;
+}
+
+.border-top-gold {
+    border-top: 10px solid #CE7D00 !important; /* Gold top border */
+}
+
+.border-bottom-gold {
+    border-bottom: 10px solid #CE7D00 !important; /* Gold top border */
 }
 
 .custom-card {
@@ -240,7 +254,7 @@ h6,
 # Header
 --------------------------------------------------------------*/
 #header {
-	height: 70px;
+	height: 80px;
 	transition: all 0.5s;
 	z-index: 997;
 	transition: all 0.5s;
@@ -255,8 +269,8 @@ h6,
 
 #header.header-scrolled {
 	background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
-	height: 70px;
-	padding: 10px 0;
+	height: 75px;
+	padding: 5px 0;
 }
 
 #header .logo h1 {

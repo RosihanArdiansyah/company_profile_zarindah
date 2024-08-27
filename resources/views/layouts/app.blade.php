@@ -62,7 +62,7 @@
 	</head>
 
 	<body>
-		<header id="header" class="fixed-top header">
+		<header id="header" class="fixed-top header border-bottom-gold">
 			<div class="container">
 				<div class="logo float-left">
 					<a href="/" class="text-white">
@@ -123,7 +123,7 @@
 
 		@yield('content')
 
-		<footer id="footer">
+		<footer class="border-top-gold" id="footer">
 			<!-- Footer Content -->
 			<div class="container">
 				<div class="row contact">

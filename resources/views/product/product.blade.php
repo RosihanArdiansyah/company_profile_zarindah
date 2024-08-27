@@ -15,7 +15,7 @@
             <!-- <h3>ISI</h3> -->
             @foreach($products['type'] as $type)
 			<div class="grid-item-link">
-				<div class="grid-item">
+				<div class="grid-item border-gold">
 					<!-- <h1 class="title">{{ $type["name"] }}</h1> -->
 					<img
 						src="{{ asset($type['image']) }}"

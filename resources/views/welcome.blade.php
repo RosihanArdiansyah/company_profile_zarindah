@@ -127,7 +127,7 @@
           @php
             $articleImage = asset($article['image']);
           @endphp
-        <a href="{{ route('article.content', ['slug' => $article['slug']]) }}" class="box-product carousel-cell article-carousel"
+        <a href="{{ route('article.content', ['slug' => $article['slug']]) }}" class="box-product carousel-cell article-carousel border-gold"
           style="background-image: url('{{ $articleImage }}')">
           <div class="overlay">
             <h1 class="article-title text-white">{{ $article['title'] }}</h1>
