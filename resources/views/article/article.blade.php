@@ -1,5 +1,13 @@
 @extends('layouts.app') @section('content')
-<section class="section-title content-title">
+<style>
+    .with-background {
+        background-image: url('{{ asset('assets/img/bg_section.webp') }}');
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: multiply;
+    }
+</style>
+<section class="section-title content-title with-background">
 	<h1><i class="icofont-building-alt"></i></h1>
 	<h3>Artikel</h3>
 </section>
