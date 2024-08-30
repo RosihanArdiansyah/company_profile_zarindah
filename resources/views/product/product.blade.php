@@ -21,8 +21,9 @@
 
 <main >
     <section class="content-page " >
-        <div class="grid-container" style="margin-top:100px;">
-            <!-- <h3>ISI</h3> -->
+    <h5 style="margin-top:100px; padding:8px;" class="text-center">{!! nl2br(e($products['description'])) !!}</h5>
+        <div class="grid-container" >
+            
             @foreach($products['type'] as $type)
 			<div class="grid-item-link">
 				<div class="grid-item border-gold">

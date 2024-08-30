@@ -15,7 +15,10 @@ class unitController extends Controller
                 'image' => 'assets\img\produk\bantaeng\LOGO\natura_bantaeng_logo.png',
                 'title' => 'Bantaeng',
                 'slug' => 'bantaeng',
-                'description' => 'Lorem Ipsum Dolor si amet',
+                'description' => "TIPE RUMAH 36/84 (subsidi)\nLuas Bangunan: 36m 2\nLuas Lahan: 84m 2\nSPESIFIKASI RUMAH\n
+                    a. Atap\nRANGKA BAJA RINGAN - ATAP SPANDEK\n
+                    b. Dinding\nBATU MERAH FINISHING\n
+                    c. Lantai & Pondasi\nKERAMIK 30X30 & BATU KALI - SLOF BETON BERTULANG",
                 'type' => [
                     [
                         'name' => 'type 1',
