@@ -150,22 +150,26 @@ class HomeController extends Controller
             [
                 'name' => 'ARYA',
                 'position' => 'Marketing Executive',
-                'image' => 'assets/img/managerial/ARYA.webp'
+                'image' => 'assets/img/managerial/ARYA.webp',
+                'wa' => '6281234567890',
             ],
             [
                 'name' => 'FIRA',
                 'position' => 'Marketing Executive',
-                'image' => 'assets/img/managerial/FIRA.webp'
+                'image' => 'assets/img/managerial/FIRA.webp',
+                'wa' => '6281234567890',
             ],
             [
                 'name' => 'SANTI',
                 'position' => 'Marketing Executive',
-                'image' => 'assets/img/managerial/SANTI.webp'
+                'image' => 'assets/img/managerial/SANTI.webp',
+                'wa' => '6281234567890',
             ],
             [
                 'name' => 'TINA',
                 'position' => 'Marketing Executive',
-                'image' => 'assets/img/managerial/TINA.webp'
+                'image' => 'assets/img/managerial/TINA.webp',
+                'wa' => '6281234567890',
             ],
         ];
     }
