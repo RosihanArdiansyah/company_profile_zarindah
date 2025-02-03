@@ -21,6 +21,8 @@ use App\Http\Controllers\unitController;
 // });
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/article', [HomeController::class, 'article'])->name('article');
+Route::get('/promo', [HomeController::class, 'promo'])->name('promo');
+
 // Route::get('/products', [unitController::class, 'index'])->name('products');
 Route::get('/product/{slug}', [unitController::class, 'show'])->name('product');
 Route::get('/article/{slug}', [articleController::class, 'show'])->name('article.content');

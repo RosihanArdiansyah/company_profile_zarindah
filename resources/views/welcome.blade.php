@@ -44,7 +44,7 @@
     <div class="container">
 
       <div class="section-title font-weight-bold">
-        <h1>Kenapa Zarindah</h1>
+        <h1 class="font-weight-bold text-dark">Kenapa Zarindah</h1>
       </div>
 
       <div class="row">
@@ -121,7 +121,7 @@
   <!-- ======= Article Section ======= -->
   <section id="article" class="article">
     <div class="container text-center">
-      <h1 class="title font-weight-bold">Artikel</h1>
+      <h1 class="title font-weight-bold text-dark">Artikel</h1>
       <div class="items-carousel">
         @foreach($articles as $article)
           @php

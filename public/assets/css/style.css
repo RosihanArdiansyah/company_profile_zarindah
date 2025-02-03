@@ -13,12 +13,12 @@
 	--secondary-color: #096b3c;
 	--light-color: #e1f0da;
 	--hover-color: #e7b10a;
-	--secondary-section-color: #5b9b5d;
+	--secondary-section-color: #ffffff;
 	--menu-color: #f3ff90;
 	--border-color:  #CE7D00;
 }
 body {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Poppins", Arial, Helvetica, sans-serif;
 	color: #777;
 	margin: 0;
 	padding: 0;

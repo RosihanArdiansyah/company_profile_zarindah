@@ -10,6 +10,7 @@ class HomeController extends Controller
     protected $promo;
     protected $articles;
     protected $managers;
+    protected $promos;
 
     public function __construct()
     {
@@ -146,13 +147,28 @@ class HomeController extends Controller
             ]
         ];
 
-        $this->managers = [
+        $this->promos = [
             [
-                'name' => 'ARYA',
-                'position' => 'Marketing Executive',
-                'image' => 'assets/img/managerial/ARYA.webp',
-                'wa' => '6281234567890',
+                'image' => 'assets/img/promo/IMG_1336.webp',
+                'title' => 'Promo Kemerdekaan',
+                'description' => 'Lorem Ipsum Dolor si amet',
+                'slug' => 'promo-kemerdekaan'
             ],
+            [
+                'image' => 'assets/img/promo/IMG_1329.webp',
+                'title' => 'Promo Kemerdekaan',
+                'description' => 'Lorem Ipsum Dolor si amet',
+                'slug' => 'promo-kemerdekaan-2'
+            ],
+        ];
+
+        $this->managers = [
+            // [
+            //     'name' => 'ARYA',
+            //     'position' => 'Marketing Executive',
+            //     'image' => 'assets/img/managerial/ARYA.webp',
+            //     'wa' => '6281234567890',
+            // ],
             [
                 'name' => 'FIRA',
                 'position' => 'Marketing Executive',
@@ -199,5 +215,12 @@ class HomeController extends Controller
         $products = $this->products;
         $articles = $this->articles;
         return view('article.article', compact('articles'));
+    }
+
+    public function promo()
+    {
+        $products = $this->products;
+        $promos = $this->promos;
+        return view('promo.promo', compact('promos'));
     }
 }

@@ -35,14 +35,14 @@
 						src="{{ asset($manager['image']) }}"
 						alt="{{ $manager['name'] }}" />
 					<!-- <p style="margin-top:10px;">{{ $manager["position"] }}</p> -->
-					<a
+					<!-- <a
 						href="https://wa.me/{{ $manager['wa'] }}"
 						class="whatsapp"
 						target="_blank">
 						<i class="icofont-whatsapp">
 							<span class="wa-text">{{ $manager["wa"] }}</span></i
 						>
-					</a>
+					</a> -->
 				</div>
 			</div>
 			@endforeach
